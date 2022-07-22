@@ -1,0 +1,176 @@
+.btn-main, .home .home-desc .home-form .home-btn {
+  padding: 0.4rem 1.5rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  background-color: #0075ff;
+  color: #fff;
+  border: 1px solid #0075ff;
+}
+.btn-main:hover, .home .home-desc .home-form .home-btn:hover {
+  background-color: #0365d4;
+}
+
+.btn-sec {
+  padding: 0.4rem 1.5rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  color: #000000;
+  background-color: transparent;
+  border: none;
+}
+.btn-sec:hover {
+  color: #0075ff;
+}
+
+.nav-list {
+  margin: 0;
+}
+.nav-list li {
+  font-size: 1rem;
+  list-style: none;
+  display: inline;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+.nav-list li a {
+  color: #000000;
+  text-decoration: none;
+}
+.nav-list .nav-items:hover {
+  padding-bottom: 1.2rem;
+  color: #0075ff;
+  border-bottom: 4px solid #0075ff;
+}
+
+.main-icon {
+  color: #0075ff;
+  font-size: 1.5rem;
+  padding: 0.35rem 0.55rem;
+  margin: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4666666667);
+}
+
+.feuture {
+  display: flex;
+  flex-direction: column;
+}
+.feuture .icon {
+  color: #0075ff;
+  font-size: 10rem;
+  text-align: center;
+}
+.feuture .description .title {
+  font-size: 2rem;
+  text-align: center;
+}
+.feuture .description .text {
+  color: #888;
+  font-weight: 600;
+  text-align: center;
+}
+.feuture .cta {
+  margin-top: 3rem;
+  color: #0075ff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.icon-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.icon-desc .icon {
+  color: #0075ff;
+  font-size: 10rem;
+  padding: 0;
+}
+.icon-desc .title {
+  margin-top: -2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Section Navigation */
+.nav-bar {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem 0;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  width: 8.5rem;
+}
+
+/* Section home */
+.home {
+  width: 90%;
+  margin: 3rem auto;
+  padding: 5rem 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.home .home-desc {
+  width: 25rem;
+  margin: 1rem 2rem;
+  padding: 1rem 0;
+  align-self: center;
+}
+.home .home-desc .home-cta {
+  color: #0075ff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 3rem;
+  text-decoration: none;
+}
+.home .home-desc .home-cta .home-icon {
+  margin-left: -0.6rem;
+  vertical-align: -0.25em;
+  font-size: 2rem;
+}
+.home .home-desc .home-title {
+  font-size: 4.5rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.home .home-desc .home-text {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 1rem;
+  line-height: 1;
+}
+.home .home-desc .home-form {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .home-desc .home-form .home-input {
+  width: 63%;
+  height: 2.5rem;
+  padding: 0 1.3rem;
+  border-radius: 0.2rem;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.home .home-desc .home-form .home-input:focus {
+  border: 1px solid #0075ff;
+}
+
+/*# sourceMappingURL=style.css.map */
