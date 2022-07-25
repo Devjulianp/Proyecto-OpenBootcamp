@@ -1,7 +1,13 @@
 @mixin btn-base {
-    padding: 0.4rem 1.5rem;
+    padding: 0.4rem 0.5rem;
     border-radius: 0.25rem;
+    font-size: 0.8rem;
     font-weight: bold;
+}
+
+@mixin section-base {
+    width: 100%;
+    margin: 1rem auto;
 }
 
 
@@ -57,22 +63,24 @@ $fontw-main: 600;
     color: $color-main;
     font-size: 1.5rem;
     padding: 0.35rem 0.55rem ;
-    margin: 1rem;
+    margin: 2rem 1rem;
     border-radius: 50%;
     box-shadow: 0 3px 10px #00000077;
 }
 
-.feuture {
+.learn-items {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     .icon {
         color: $color-main;
-        font-size: 10rem;
+        font-size: 7.5rem;
         text-align: center;
     }
 
     .description {
+        height: 10rem;
         .title {
             font-size: 2rem;
             text-align: center;
@@ -82,14 +90,19 @@ $fontw-main: 600;
             color: #888;
             font-weight: $fontw-main;
             text-align: center;
+            
         }
     }
 
     .cta {
-        margin-top: 3rem;
+        padding: 2rem;
         color: $color-main;
         font-weight: $fontw-main;
         text-align: center;
+
+        a {
+            text-decoration: none;
+        }
     }
 }
 

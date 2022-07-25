@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
+<body class="container">
     <header class="header">
         <nav class="nav-bar">
-            <a href="#"><img
-                    src="../assets/img/Logo 1.png"
-                    alt="logo coinbase" class="nav-logo"></a>
-            <ul class="nav-list">
+            <div class="nav-image">
+                <a href="#"><img src="../assets/img/Logo 1.png" alt="logo coinbase" class="nav-logo"></a>
+            </div>
+            <ul class="nav-list d-none d-lg-inline d-flex justify-content-between">
                 <li><a href="#" class="nav-items">Price</a></li>
                 </li>
                 <li><a href="#" class="nav-items">Learn</a></li>
@@ -28,13 +28,18 @@
                 <li><a href="#" class="nav-items">Developer</a></li>
                 <li><a href="#" class="nav-items">Company</a></li>
             </ul>
-            <div class="nav-btn">
-                <button class="btn-sec">Sign</button>
-                <button class="btn-main">Get started</button>
+            <div class="nav-collapse nav">
+                <div class="nav-btn">
+                    <button class="btn-sec d-none d-md-inline">Sign</button>
+                    <button class="btn-main">Get started</button>
+                </div>
+                <div class="nav-svg">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAG9JREFUSEvtlckNwCAQA01nlEY6g8qC9rEfjigPKyBiF+CRRoYNWJSwiAuBPzMv1a46AbiJ3q+2a6aaCTVmx9kOTLQ8rtKq3Uskr7po1bNxmWpm8lvVTOiwS8/Jtfzvr7azyEzXp3Ex9T52SfX5qisn1AwfJnWg+AAAAABJRU5ErkJggg==" class="nav-svg-icon d-lg-none"/>
+                </div>
             </div>
         </nav>
     </header>
-    <section class="home">
+    <section class="home d-flex flex-md-row justify-content-evenly align-items-center">
         <div class="home-desc">
             <a href="#" class="home-cta">Jump start portfolio <span><i
                         class="bi bi-arrow-right-short home-icon"></i></span></a>
@@ -46,8 +51,8 @@
                 <button class="home-btn">Get started</button>
             </form>
         </div>
-        <div class="home-image">
-            <svg width="500" height="556" viewBox="0 0 680 956" fill="none" xmlns="http://www.w3.org/2000/svg"
+        <div class="home-image d-none d-md-inline">
+            <svg class="home-svg" width="500" height="556" viewBox="0 0 680 956" fill="none" xmlns="http://www.w3.org/2000/svg"
                 class="HeroVariant__HeroImage-sc-1o7093z-6 PCcMF">
                 <circle cx="340" cy="428" r="340" fill="#F1F5FE"></circle>
                 <g filter="url(#prefix__filter0_dd)">
@@ -130,27 +135,34 @@
         </div>
     </section>
     <main class="main">
-        <h1 class="main-title">Create you crystocurrency portfolio today</h1>
+        <h1 class="main-title h1">Create you crystocurrency portfolio today</h1>
         <h4 class="main-subtitle">Coinbase has a variety of features that make it the best place to start trading</h4>
-        <div class="main-content">
+        <div class="main-content d-flex flex-column-reverse flex-lg-row justify-content-evenly align-items-center">
             <div class="main-port">
-                <div class="main-port-item">
+                <div class="main-port-item d-flex flex-column align-items-center justify-content-center flex-md-row flex-lg-row">
                     <span><i class="bi bi-graph-up main-icon"></i></span>
-                    <h5 class="main-title-porf">Manage you porfolio</h5>
-                    <p class="main-text">Buy and sell popular digital currencies, keep track of them in the one place.
-                    </p>
+                    <div class="main.desc">
+                        <h5 class="main-title-port">Manage you porfolio</h5>
+                        <p class="main-text">Buy and sell popular digital currencies, keep track of them in the one
+                            place.
+                        </p>
+                    </div>
                 </div>
-                <div class="main-port-item">
+                <div class="main-port-item d-flex flex-column align-items-center justify-content-center flex-md-row flex-lg-row">
                     <span><i class="bi bi-calendar main-icon"></i></span>
-                    <h5 class="main-title-porf">Manage you porfolio</h5>
-                    <p class="main-text">Buy and sell popular digital currencies, keep track of them in the one place.
-                    </p>
+                    <div class="main.desc">
+                        <h5 class="main-title-port">Manage you porfolio</h5>
+                        <p class="main-text">Buy and sell popular digital currencies, keep track of them in the one place.
+                        </p>
+                    </div>
                 </div>
-                <div class="main-port-item">
+                <div class="main-port-item d-flex flex-column align-items-center justify-content-center flex-md-row flex-lg-row">
                     <span><i class="bi bi-phone main-icon"></i></span>
-                    <h5 class="main-title-porf">Manage you porfolio</h5>
-                    <p class="main-text">Buy and sell popular digital currencies, keep track of them in the one place.
-                    </p>
+                    <div class="main.desc">
+                        <h5 class="main-title-port">Manage you porfolio</h5>
+                        <p class="main-text">Buy and sell popular digital currencies, keep track of them in the one place.
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="main-image">
@@ -161,6 +173,43 @@
             </div>
         </div>
     </main>
+    <section class="learn">
+        <h1 class="learn-title h1">The most trusted cryptocurrency platform</h1>
+        <h4 class="learn-subtitle">Here are a few reasons why you should choose Coin</h4>
+        <div class="learn-benefit d-flex flex-column flex-md-column flex-lg-column align-items-center justify-content-center">
+            <div class="learn-items">
+                <i class="bi bi-eye-fill icon"></i>
+                <div class="description">
+                    <h4 class="title">Secure storage</h4>
+                    <p class="text">We store the vast majority of the digital assets in secure offline storage.</p>
+                </div>
+                <div class="cta">
+                    <a href="#">Learn how Coinbase keeps your funds safe and secure</a>
+                </div>
+            </div>
+            <div class="learn-items">
+                <i class="bi bi-envelope-fill icon"></i>
+                <div class="description">
+                    <h4 class="title">Protected by insurance</h4>
+                    <p class="text">Coinbase maintains crypto insurance and all USD cash balances are covered by FDIC
+                        insurance, up to a maximum of $250,000.</p>
+                </div>
+                <div class="cta">
+                    <a href="#">Learn how your crypto is covered by our insurance policy</a>
+                </div>
+            </div>
+            <div class="learn-items">
+                <i class="bi bi-shield-shaded icon"></i>
+                <div class="description">
+                    <h4 class="title">Industry best practices</h4>
+                    <p class="text">Coinbase supports a variety of the most popular digital currencies.</p>
+                </div>
+                <div class="cta">
+                    <a href="#">Learn how we implement industry best practices for account security</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
