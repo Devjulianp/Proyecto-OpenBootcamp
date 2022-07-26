@@ -7,7 +7,8 @@
 
 @mixin section-base {
     width: 100%;
-    margin: 1rem auto;
+    margin: 2rem auto;
+    padding: 2rem 0.5rem;
 }
 
 
@@ -21,7 +22,7 @@ $fontw-main: 600;
     border: 1px solid $color-main;
 
     &:hover {
-        background-color: #0365d4; 
+        background-color: #0365d4;
     }
 }
 
@@ -32,7 +33,7 @@ $fontw-main: 600;
     border: none;
 
     &:hover {
-        color:$color-main;
+        color: $color-main;
     }
 }
 
@@ -62,13 +63,14 @@ $fontw-main: 600;
 .main-icon {
     color: $color-main;
     font-size: 1.5rem;
-    padding: 0.35rem 0.55rem ;
-    margin: 2rem 1rem;
+    padding: 0.35rem 0.55rem;
+    margin: 0 1rem;
     border-radius: 50%;
     box-shadow: 0 3px 10px #00000077;
 }
 
 .learn-items {
+    margin: 1rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,34 +81,39 @@ $fontw-main: 600;
         text-align: center;
     }
 
-    .description {
-        height: 10rem;
-        .title {
-            font-size: 2rem;
-            text-align: center;
-        }
-
-        .text {
-            color: #888;
-            font-weight: $fontw-main;
-            text-align: center;
-            
-        }
+    .title {
+        font-size: 2rem;
+        text-align: center;
     }
 
-    .cta {
-        padding: 2rem;
-        color: $color-main;
+    .text {
+        color: #888;
         font-weight: $fontw-main;
         text-align: center;
 
-        a {
-            text-decoration: none;
-        }
     }
 }
 
-.icon-desc {
+.learn-items--active {
+    .learn-desc {
+        height: 6.9rem;
+    }
+}
+
+.cta {
+    margin: 2rem 0;
+    padding: 1rem;
+    color: $color-main;
+    font-weight: $fontw-main;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+
+.support-items {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,14 +121,15 @@ $fontw-main: 600;
 
     .icon {
         color: $color-main;
-        font-size: 10rem;
-        padding: 0;
+        font-size: 7.5rem;
+        padding: 1rem 0;
     }
 
-    .title {
+    .support-item-title {
         margin-top: -2rem;
         font-size: 1.5rem;
         font-weight: $fontw-main;
-        
+        text-align: center;
+
     }
 }
