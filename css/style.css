@@ -1,5 +1,5 @@
-.btn-main, .home .home-desc .home-form .home-btn {
-  padding: 0.4rem 0.5rem;
+.btn-main, .home .home-desc .home-form .home-btn, .cripto .cripto-container .cripto-desc .cripto-info .cripto-form .cripto-btn {
+  padding: 0.4rem 0.6rem;
   border-radius: 0.25rem;
   font-size: 0.8rem;
   font-weight: bold;
@@ -7,12 +7,12 @@
   color: #fff;
   border: 1px solid #0075ff;
 }
-.btn-main:hover, .home .home-desc .home-form .home-btn:hover {
+.btn-main:hover, .home .home-desc .home-form .home-btn:hover, .cripto .cripto-container .cripto-desc .cripto-info .cripto-form .cripto-btn:hover {
   background-color: #0365d4;
 }
 
 .btn-sec {
-  padding: 0.4rem 0.5rem;
+  padding: 0.4rem 0.6rem;
   border-radius: 0.25rem;
   font-size: 0.8rem;
   font-weight: bold;
@@ -47,7 +47,7 @@
 .main-icon {
   color: #0075ff;
   font-size: 1.5rem;
-  padding: 0.35rem 0.55rem;
+  padding: 0.35rem 0.8rem;
   margin: 0 1rem;
   border-radius: 50%;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4666666667);
@@ -113,15 +113,22 @@
   box-sizing: border-box;
 }
 
+.line-header {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 4rem;
+  background-color: rgb(236, 239, 241);
+}
+
 /* Section Navigation */
 .nav-bar {
   width: 100%;
   background-color: #fff;
-  border-bottom: 1px solid #eee;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0.8rem 0.5rem;
 }
 .nav-bar .nav-logo {
   width: 7rem;
@@ -197,60 +204,56 @@
   width: 25rem;
 }
 
-.main, .support, .learn {
+.main, .cripto, .support, .learn {
   width: 100%;
   margin: 2rem auto;
   padding: 2rem 0.5rem;
 }
-.main .main-title, .support .main-title, .support .support-title, .learn .main-title, .learn .learn-title {
+.main .main-title, .cripto .main-title, .support .main-title, .support .support-title, .learn .main-title, .learn .learn-title {
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
   text-align: center;
 }
-.main .main-subtitle, .support .main-subtitle, .support .support-subtitle, .learn .main-subtitle, .learn .learn-subtitle {
+.main .main-subtitle, .cripto .main-subtitle, .support .main-subtitle, .support .support-subtitle, .learn .main-subtitle, .learn .learn-subtitle {
   color: #999999;
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 2rem;
   text-align: center;
 }
-.main .main-content, .support .main-content, .support .support-container, .learn .main-content, .learn .learn-benefit {
+.main .main-content, .cripto .main-content, .cripto .cripto-container .cripto-desc, .support .main-content, .support .support-container, .learn .main-content, .learn .learn-benefit {
   width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.main .main-content .main-port, .support .main-content .main-port, .support .support-container .main-port, .learn .main-content .main-port, .learn .learn-benefit .main-port {
+.main .main-content .main-port, .cripto .main-content .main-port, .cripto .cripto-container .cripto-desc .main-port, .support .main-content .main-port, .support .support-container .main-port, .learn .main-content .main-port, .learn .learn-benefit .main-port {
   width: 100%;
   display: flex;
   flex-direction: column;
   margin: 2rem 0;
 }
-.main .main-content .main-port .main-port-item, .support .main-content .main-port .main-port-item, .support .support-container .main-port .main-port-item, .learn .main-content .main-port .main-port-item, .learn .learn-benefit .main-port .main-port-item {
+.main .main-content .main-port .main-port-item, .cripto .main-content .main-port .main-port-item, .cripto .cripto-container .cripto-desc .main-port .main-port-item, .support .main-content .main-port .main-port-item, .support .support-container .main-port .main-port-item, .learn .main-content .main-port .main-port-item, .learn .learn-benefit .main-port .main-port-item {
   text-align: center;
   margin: 1.5rem 0;
 }
-.main .main-content .main-port .main-port-item span, .support .main-content .main-port .main-port-item span, .support .support-container .main-port .main-port-item span, .learn .main-content .main-port .main-port-item span, .learn .learn-benefit .main-port .main-port-item span {
+.main .main-content .main-port .main-port-item span, .cripto .main-content .main-port .main-port-item span, .cripto .cripto-container .cripto-desc .main-port .main-port-item span, .support .main-content .main-port .main-port-item span, .support .support-container .main-port .main-port-item span, .learn .main-content .main-port .main-port-item span, .learn .learn-benefit .main-port .main-port-item span {
   margin: 0 1.2rem;
 }
-.main .main-content .main-port .main-port-item .main-title-port, .support .main-content .main-port .main-port-item .main-title-port, .support .support-container .main-port .main-port-item .main-title-port, .learn .main-content .main-port .main-port-item .main-title-port, .learn .learn-benefit .main-port .main-port-item .main-title-port {
+.main .main-content .main-port .main-port-item .main-title-port, .cripto .main-content .main-port .main-port-item .main-title-port, .cripto .cripto-container .cripto-desc .main-port .main-port-item .main-title-port, .support .main-content .main-port .main-port-item .main-title-port, .support .support-container .main-port .main-port-item .main-title-port, .learn .main-content .main-port .main-port-item .main-title-port, .learn .learn-benefit .main-port .main-port-item .main-title-port {
   font-weight: bold;
   font-size: 1.5rem;
   margin: 2rem 0 1rem;
 }
-.main .main-content .main-port .main-port-item .main-text, .support .main-content .main-port .main-port-item .main-text, .support .support-container .main-port .main-port-item .main-text, .learn .main-content .main-port .main-port-item .main-text, .learn .learn-benefit .main-port .main-port-item .main-text {
+.main .main-content .main-port .main-port-item .main-text, .cripto .main-content .main-port .main-port-item .main-text, .cripto .cripto-container .cripto-desc .main-port .main-port-item .main-text, .support .main-content .main-port .main-port-item .main-text, .support .support-container .main-port .main-port-item .main-text, .learn .main-content .main-port .main-port-item .main-text, .learn .learn-benefit .main-port .main-port-item .main-text {
   /*margin: 0 1rem;*/
   font-size: 0.9rem;
   font-weight: 600;
   color: #666666;
 }
-.main .main-content .main-image, .support .main-content .main-image, .support .support-container .main-image, .learn .main-content .main-image, .learn .learn-benefit .main-image {
+.main .main-content .main-image, .cripto .main-content .main-image, .cripto .cripto-container .cripto-desc .main-image, .support .main-content .main-image, .support .support-container .main-image, .learn .main-content .main-image, .learn .learn-benefit .main-image {
   display: flex;
   justify-content: center;
 }
-.main .main-content .main-image .main-img, .support .main-content .main-image .main-img, .support .support-container .main-image .main-img, .learn .main-content .main-image .main-img, .learn .learn-benefit .main-image .main-img {
+.main .main-content .main-image .main-img, .cripto .main-content .main-image .main-img, .cripto .cripto-container .cripto-desc .main-image .main-img, .support .main-content .main-image .main-img, .support .support-container .main-image .main-img, .learn .main-content .main-image .main-img, .learn .learn-benefit .main-image .main-img {
   width: 100%;
   margin-top: 1.5rem;
 }
@@ -286,7 +289,10 @@
 }
 
 .support .support-container {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .support .support-container .support-items .icon-img {
   width: 7.5rem;
@@ -299,6 +305,56 @@
   background-color: #0075ff;
 }
 
+.cripto {
+  background-color: #113355;
+}
+.cripto .cripto-container {
+  width: 100%;
+}
+.cripto .cripto-container .cripto-desc {
+  flex: 1 1 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cripto .cripto-container .cripto-desc .cripto-info {
+  max-width: 23rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cripto .cripto-container .cripto-desc .cripto-info .cripto-title {
+  font-size: 2rem;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+.cripto .cripto-container .cripto-desc .cripto-info .cripto-subtitle {
+  font-size: 1.08rem;
+  font-weight: 400;
+  color: #fff;
+  padding: 0.5rem 2.5rem;
+  text-align: center;
+}
+.cripto .cripto-container .cripto-desc .cripto-info .cripto-form .cripto-btn {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+}
+.cripto .cripto-container .cripto-image {
+  width: 100%;
+  flex: 1 1 50%;
+  max-width: 50rem;
+  display: flex;
+  justify-content: center;
+}
+.cripto .cripto-container .cripto-image picture {
+  width: 100%;
+}
+.cripto .cripto-container .cripto-image picture .cripto-img {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .main-title-port {
     text-align: left;
@@ -309,6 +365,44 @@
   }
   .main-img {
     width: 580px !important;
+  }
+  .cripto {
+    background-color: #f5f8ff;
+    padding: 0;
+  }
+  .cripto .cripto-container {
+    width: 100%;
+    height: 30rem;
+  }
+  .cripto .cripto-container .cripto-desc {
+    width: 100%;
+    flex: 1 1 50%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .cripto .cripto-container .cripto-desc .cripto-info {
+    max-width: 25rem;
+    padding: 0 1rem;
+  }
+  .cripto .cripto-container .cripto-desc .cripto-info .cripto-title {
+    padding: 0;
+    color: #000000;
+    text-align: start;
+  }
+  .cripto .cripto-container .cripto-desc .cripto-info .cripto-subtitle {
+    color: #0A0B0D;
+    padding: 1rem 0;
+    margin-bottom: 1rem 0;
+    font-size: 0.9rem;
+    text-align: start;
+  }
+  .cripto .cripto-container .cripto-desc .cripto-info .cripto-form {
+    width: 100%;
+  }
+  .cripto .cripto-container .cripto-desc .cripto-info .cripto-form .cripto-btn {
+    align-self: flex-start;
   }
 }
 @media (min-width: 1200px) {

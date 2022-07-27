@@ -1,5 +1,5 @@
 @mixin btn-base {
-    padding: 0.4rem 0.5rem;
+    padding: 0.4rem 0.6rem;
     border-radius: 0.25rem;
     font-size: 0.8rem;
     font-weight: bold;
@@ -63,7 +63,7 @@ $fontw-main: 600;
 .main-icon {
     color: $color-main;
     font-size: 1.5rem;
-    padding: 0.35rem 0.55rem;
+    padding: 0.35rem 0.8rem;
     margin: 0 1rem;
     border-radius: 50%;
     box-shadow: 0 3px 10px #00000077;
